@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import Card from "./components/Card";
+import Expenses from "./components/Expenses";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const expenses = [
+    {
+      id: "e1",
+      title: "food",
+      amount: 94.12,
+      date: new Date(2023, 3, 14),
+    },
+    {
+      id: "e2",
+      title: "rent",
+      amount: 580.0,
+      date: new Date(2023, 2, 1),
+    },
+    {
+      id: "e3",
+      title: "bills",
+      amount: 200.0,
+      date: new Date(2023, 1, 10),
+    },
+    {
+      id: "e4",
+      title: "car repair",
+      amount: 1100.0,
+      date: new Date(2023, 4, 29),
+    },
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Card >
+      <Expenses items={expenses}/>
+    </Card>
+    
     </>
-  )
+  );
 }
 
-export default App
+export default App;

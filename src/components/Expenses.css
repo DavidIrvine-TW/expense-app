@@ -1,0 +1,8 @@
+.expenses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--clr-yellow);
+    padding: 1rem;
+    border: 2px solid var(--clr-green);
+}

@@ -1,0 +1,5 @@
+.card {
+    border-radius: 5px;
+    box-sizing: 0 1px 8px var(--clr-red);
+    padding: .75em;
+}
