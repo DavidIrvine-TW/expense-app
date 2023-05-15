@@ -1,0 +1,10 @@
+.new-expense__controls {
+    display: flex;
+    gap: 8px;
+}
+
+.new-expense__control {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

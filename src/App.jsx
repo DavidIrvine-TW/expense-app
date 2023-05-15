@@ -1,6 +1,7 @@
 
 import Card from "./components/Card";
 import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
     <Card >
+      <NewExpense/>
       <Expenses items={expenses}/>
     </Card>
     
